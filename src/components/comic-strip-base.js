@@ -146,7 +146,7 @@ export default class ComicStripBase extends React.Component {
     state = {
       currentLanguage: this.props.defaultLanguage,
       currentMode: this.props.defaultMode,
-      currentTableBackground: this.props.defaultTableBackground,
+      currentTableBackground: this.props.tableBackgroundOptions[0],
       currentSize: 65,
       slideIndex: 0,
       updateCount: 0,
@@ -193,8 +193,8 @@ export default class ComicStripBase extends React.Component {
       };
   
       return(
-        <Layout useCustomBackground={this.props.useCustomBackground} menuBarItems={[(<SettingsWindow state={this.state} languageOptions={contents.languageOptions} modeOptions={this.props.modeOptions} tableBackgroundOptions={this.props.tableBackgroundOptions} changeLanguage={this.changeLanguage} changeMode={this.changeMode} changeTableBackground={this.changeTableBackground} changePageSize={this.changePageSize} />)]} showMenuBar={true}>
-          <div style={this.props.tableBackgrounds[this.state.currentTableBackground]}>
+        <Layout useCustomBackground={this.props.useCustomBackground} menuBarItems={[(<SettingsWindow state={this.state} languageOptions={contents.languageOptions} modeOptions={contents.modeOptions} tableBackgroundOptions={this.props.tableBackgroundOptions} changeLanguage={this.changeLanguage} changeMode={this.changeMode} changeTableBackground={this.changeTableBackground} changePageSize={this.changePageSize} />)]} showMenuBar={true}>
+          <div className={`table-background-${this.state.currentTableBackground.toLowerCase().replace(" ", "-")}`}>
             <div className={`m-3 p-3 comic-strip-main`} style={{textAlign: 'center', color: "#017BFF"}}>
             <section className="my-3" style={{textAlign: "center"}}>
               <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>{contents.metadataItems.childMarkdownRemark.frontmatter.title}</ResponsiveHeader>

@@ -1,10 +1,10 @@
 {
-  "name": "znzn-v4-mbei-v1-i2",
+  "name": "znzn-v2-mbfb-v2-i2",
   "author": "Au-venturous Buddy <auventurous.buddy@gmail.com>",
   "main": "main.js",
   "build": {
-    "icon": "src/images/Social Snapshots.png",
-    "productName": "Zene 'N Zeanne Social Snapshots: Preparing for School",
+    "icon": "src/images/Zene N Zeanne V4 Logo Small.png",
+    "productName": "New Year, New Normal, Better Normal",
     "files": [
       "public/**/*",
       "main.js"
@@ -46,8 +46,8 @@
     }
   },
   "private": true,
-  "description": "Zeanne teaches Zene how to get ready for school.",
-  "version": "4.1.2.0",
+  "description": "Zene encourages his twin sister Zeanne to spend more time reading the Bible.",
+  "version": "2.2.2.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",

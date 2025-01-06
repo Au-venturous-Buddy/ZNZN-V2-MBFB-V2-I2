@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Zene 'N Zeanne Social Snapshots: Preparing for School`,
+    title: `New Year, New Normal, Better Normal`,
     author: `Au-venturous Buddy`
   },
   plugins: [
@@ -26,15 +26,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Zene 'N Zeanne Social Snapshots: Preparing for School`,
-        short_name: `ZNZN-V4-MBEI-V1-I2`,
+        name: `New Year, New Normal, Better Normal`,
+        short_name: `ZNZN-V2-MBFB-V2-I2`,
         start_url: `/`,
         background_color: `#017BFF`,
         theme_color: `#017BFF`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/images/Social Snapshots.png`, // This path is relative to the root of the site.
+        icon: `src/images/Zene\ N\ Zeanne\ V4\ Logo\ Small.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,

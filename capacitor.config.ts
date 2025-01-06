@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.i2.v1.mbei.v4.znzn',
-  appName: "Zene 'N Zeanne Social Snapshots: Preparing for School",
+  appId: 'com.i2.v2.mbfb.v2.znzn',
+  appName: "New Year, New Normal, Better Normal",
   webDir: 'public',
   bundledWebRuntime: false
 };

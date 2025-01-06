@@ -2,7 +2,7 @@
 .carousel-control-next,
 .page-navigator-button {
   background-color: rgba(0, 0, 0, 0);
-  color: #00f;
+  color: $primaryColor;
   width: 10%;
   opacity: 1;
   margin-top: 5%;
@@ -36,7 +36,7 @@
 .page-navigator-button:hover {
   box-shadow: none;
   background: rgba(0, 0, 0, 0);
-  color: #00f;
+  color: $primaryColor;
 }
 
 .carousel-fade {
